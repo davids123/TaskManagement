@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * mitash
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the mitash.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.mitash.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   mitash
+ * @package    Ves_Brand
+ * @copyright  Copyright (c) 2014 mitash (https://www.mitash.com/)
+ * @license    https://www.mitash.com/LICENSE-1.0.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+	<menu> 
+		<add id="Ves_Brand::brand" title="Tasks" module="Ves_Brand" sortOrder="40" resource="Ves_Brand::brand" parent="Ves_All::ves_all"/>
+		<add id="Ves_Brand::brand_new" title="Add New Task" module="Ves_Brand" sortOrder="10" parent="Ves_Brand::brand" action="vesbrand/brand/new" resource="Ves_Brand::brand"/> 
+		<add id="Ves_Brand::brand_manage" title="Manage Tasks" module="Ves_Brand" sortOrder="20" parent="Ves_Brand::brand" action="vesbrand/brand/index" resource="Ves_Brand::brand"/>
+		<!-- <add id="Ves_Brand::brand_group_manage" title="Manage Groups" module="Ves_Brand" sortOrder="40" parent="Ves_Brand::brand" action="vesbrand/group/index" resource="Ves_Brand::group"/> -->
+		<!-- <add id="Ves_Brand::import" title="Import Brands Products" module="Ves_Brand" sortOrder="45" parent="Ves_Brand::brand" action="vesbrand/import/index" resource="Ves_Brand::import"/>
+        <add id="Ves_Brand::configuration" title="Settings" module="Ves_Brand" sortOrder="50"
+            parent="Ves_Brand::brand" action="adminhtml/system_config/edit/section/vesbrand" resource="Ves_Brand::config_brand"/> -->
+	</menu>
+</config>

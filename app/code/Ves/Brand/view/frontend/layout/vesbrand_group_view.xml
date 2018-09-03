@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * mitash
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the mitash.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.mitash.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   mitash
+ * @package    Ves_Brand
+ * @copyright  Copyright (c) 2014 mitash (https://www.mitash.com/)
+ * @license    https://www.mitash.com/LICENSE-1.0.html
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="content">
+			<block class="Ves\Brand\Block\Group\View" name="vesbrand.group.list">
+				<block class="Ves\Brand\Block\Toolbar" name="vesbrand_toolbar" template="Ves_Brand::toolbar.phtml">
+					<block class="Magento\Theme\Block\Html\Pager" name="brand_list_toolbar_pager"/>
+				</block>
+			</block>
+		</referenceContainer>
+	</body>
+</page>

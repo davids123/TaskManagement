@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * mitash
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the mitash.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.mitash.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   mitash
+ * @package    Ves_Brand
+ * @copyright  Copyright (c) 2014 mitash (https://www.mitash.com/)
+ * @license    https://www.mitash.com/LICENSE-1.0.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::brand_elements" title="Ves Task">
+                    <resource id="Ves_Brand::brand" title="Tasks" sortOrder="10">
+                        <resource id="Ves_Brand::brand_edit" title="Edit Task" sortOrder="10" />
+                        <resource id="Ves_Brand::brand_save" title="Save Task" sortOrder="20" />
+                        <resource id="Ves_Brand::brand_delete" title="Delete Task" sortOrder="30" />
+                    </resource>
+                    <resource id="Ves_Brand::group" title="Groups" sortOrder="30">
+                        <resource id="Ves_Brand::group_edit" title="Edit Group" sortOrder="10" />
+                        <resource id="Ves_Brand::group_save" title="Save Group" sortOrder="20" />
+                        <resource id="Ves_Brand::group_delete" title="Delete Group" sortOrder="30" />
+                    </resource>
+                    <resource id="Ves_Brand::import" title="Import Tasks Products" sortOrder="40">
+                        <resource id="Ves_Brand::import_products" title="Import" sortOrder="10" />
+                        <resource id="Ves_Brand::import_save" title="Save" sortOrder="20" />
+                    </resource>
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Ves_Brand::config_brand" title="Task" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
